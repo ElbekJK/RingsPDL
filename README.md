@@ -1,6 +1,6 @@
 # RingsPDL: Rings-based CMT Toolkit
 
-![Photonics Simulation]
+[Photonics Simulation]
 
 **RingsPDL** is a comprehensive Python toolkit developed by the Photonic Device Lab at HKUST for simulating and analyzing photonic devices, with a special focus on ring resonator-based systems using Coupled Mode Theory (CMT).
 
@@ -40,7 +40,7 @@
 ## Installation
 
 ```bash
-pip install ringspdl
+pip install RingsPDL
 ```
 
 ## Dependencies
@@ -57,7 +57,7 @@ pip install ringspdl
 
 ```python
 import numpy as np
-from ringspdl import compute_transmission, plot_transmission
+from RingsPDL import compute_transmission, plot_transmission
 
 # Define wavelength range
 wl = np.linspace(1540e-9, 1560e-9, 1000)
@@ -129,7 +129,7 @@ plot_transmission(wl, T_multi, drops,
 ### Mode Profile Visualization
 
 ```python
-from ringspdl import solve_waveguide_modes, plot_mode_profile
+from RingsPDL import solve_waveguide_modes, plot_mode_profile
 
 # Solve for waveguide modes
 E_field, n_eff = solve_waveguide_modes(
@@ -255,7 +255,7 @@ The toolkit includes comprehensive examples demonstrating:
 To run the examples, execute the script directly:
 
 ```bash
-python ringspdl.py
+python RingsPDL.py
 ```
 
 ## Running Tests
@@ -263,7 +263,7 @@ python ringspdl.py
 Validate the implementation using the built-in test suite:
 
 ```bash
-pytest ringspdl.py
+pytest RingsPDL.py
 ```
 
 Tests include:
